@@ -1,0 +1,147 @@
+[gd_scene load_steps=17 format=3 uid="uid://bxlqeonapo6qf"]
+
+[ext_resource type="Texture2D" uid="uid://djk6wj64pxmi1" path="res://images/1/6.PNG" id="2_gcm3o"]
+[ext_resource type="FontFile" uid="uid://8txmqry5ky5n" path="res://fonts/DIN Next LT Arabic Medium.ttf" id="2_x7jso"]
+[ext_resource type="Texture2D" uid="uid://cbqbv7cu2cat1" path="res://images/1/7.PNG" id="3_78d14"]
+[ext_resource type="Texture2D" uid="uid://8n8ai153vgyj" path="res://images/2/6.PNG" id="4_q5i8u"]
+[ext_resource type="Texture2D" uid="uid://b4b3ol04m1j80" path="res://images/2/7.PNG" id="5_srtwc"]
+[ext_resource type="Texture2D" uid="uid://djkg005xpoplg" path="res://images/3/1.PNG" id="6_o6tvw"]
+[ext_resource type="Texture2D" uid="uid://ctfqrdc8oe1of" path="res://images/3/2.PNG" id="7_2f0ov"]
+[ext_resource type="Texture2D" uid="uid://dwn0fuqykl325" path="res://images/5/1.PNG" id="7_qnrwh"]
+[ext_resource type="Texture2D" uid="uid://c316lksmrdv2n" path="res://images/4/1/1.PNG" id="8_emdhj"]
+[ext_resource type="Texture2D" uid="uid://blec3drhhugt" path="res://images/4/1/11.PNG" id="9_bmxjr"]
+[ext_resource type="Texture2D" uid="uid://ckcttc7rtsy77" path="res://images/3/3.PNG" id="9_myptv"]
+[ext_resource type="Texture2D" uid="uid://brp0chi15113p" path="res://images/6/1/1.PNG" id="10_3b4ec"]
+[ext_resource type="Texture2D" uid="uid://dofjpeadh41eb" path="res://images/6/1/4.PNG" id="11_pn4ru"]
+[ext_resource type="Texture2D" uid="uid://cbclhr1k4kxma" path="res://images/5/2.PNG" id="13_7a03k"]
+[ext_resource type="Texture2D" uid="uid://dwp10ttga35uk" path="res://images/4/2/1.PNG" id="15_62tkp"]
+[ext_resource type="Texture2D" uid="uid://clf77qdyinoi7" path="res://images/4/3/1.PNG" id="16_qj30e"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+process_mode = 3
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -242.0
+offset_top = -125.0
+offset_right = -202.0
+offset_bottom = -77.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_x7jso")
+theme_override_font_sizes/font_size = 30
+text = "0"
+horizontal_alignment = 2
+
+[node name="Label1" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -190.0
+offset_top = -125.0
+offset_right = -150.0
+offset_bottom = -77.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_x7jso")
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -343.5
+offset_top = -196.0
+offset_right = 812.5
+offset_bottom = 389.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.245, 0.245)
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CenterContainer/CenterContainer"]
+layout_mode = 2
+max_value = 360.0
+allow_greater = true
+fill_mode = 5
+radial_initial_angle = 198.0
+texture_under = ExtResource("2_gcm3o")
+texture_progress = ExtResource("3_78d14")
+tint_progress = Color(0.376471, 0.580392, 0.596078, 1)
+
+[node name="TextureProgressBar1" type="TextureProgressBar" parent="CenterContainer/CenterContainer"]
+layout_mode = 2
+max_value = 360.0
+fill_mode = 5
+radial_initial_angle = 198.0
+texture_under = ExtResource("4_q5i8u")
+texture_progress = ExtResource("5_srtwc")
+
+[node name="TextureProgressBar2" type="TextureProgressBar" parent="CenterContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
+layout_mode = 2
+texture = ExtResource("6_o6tvw")
+
+[node name="TextureRect1" type="TextureRect" parent="CenterContainer"]
+layout_mode = 2
+texture = ExtResource("7_2f0ov")
+
+[node name="TextureRect2" type="TextureRect" parent="CenterContainer"]
+layout_mode = 2
+texture = ExtResource("9_myptv")
+
+[node name="CenterContainer1" type="CenterContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/CenterContainer1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/CenterContainer1/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("8_emdhj")
+
+[node name="TextureRect1" type="TextureRect" parent="CenterContainer/CenterContainer1/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("9_bmxjr")
+
+[node name="CenterContainer1" type="CenterContainer" parent="CenterContainer/CenterContainer1"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/CenterContainer1/CenterContainer1"]
+layout_mode = 2
+texture = ExtResource("10_3b4ec")
+
+[node name="TextureRect1" type="TextureRect" parent="CenterContainer/CenterContainer1/CenterContainer1"]
+layout_mode = 2
+texture = ExtResource("11_pn4ru")
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/CenterContainer1"]
+layout_mode = 2
+texture = ExtResource("13_7a03k")
+
+[node name="TextureRect1" type="TextureRect" parent="CenterContainer/CenterContainer1"]
+layout_mode = 2
+texture = ExtResource("7_qnrwh")
+
+[node name="TextureRect2" type="TextureRect" parent="CenterContainer/CenterContainer1"]
+layout_mode = 2
+texture = ExtResource("15_62tkp")
+
+[node name="TextureRect3" type="TextureRect" parent="CenterContainer/CenterContainer1"]
+layout_mode = 2
+texture = ExtResource("16_qj30e")
