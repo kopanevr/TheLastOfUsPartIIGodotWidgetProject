@@ -1,5 +1,7 @@
 # **THE LAST OF US PART II GODOT WIDGET PROJECT**
 
+![Godot Engine Version](https://img.shields.io/badge/GODOT-4.3-blue)
+
 ## ПРЕДИСЛОВИЕ
 
 Данный проект представляет собой пример реализации виджета, вдохновленного интерфейсом из игры [The Last of Us Part II](https://store.steampowered.com/app/2531310/The_Last_of_Us_Part_II_Remastered). В проекте используется GDExtension API для создания виджета в игровом движке [Godot Engine](https://godotengine.org).
